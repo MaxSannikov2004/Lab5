@@ -26,7 +26,7 @@ public class Invoker {
         commandHashMap.put("remove_by_id", new RemoveById());
         commandHashMap.put("clear", new Clear());
         commandHashMap.put("save", new Save());
-        commandHashMap.put("execute_script", new ExecuteScript());
+        //commandHashMap.put("execute_script", new ExecuteScript());
         commandHashMap.put("exit", new Exit());
         /*commandHashMap.put("insert_at", new InsertAt());
         commandHashMap.put("remove_at", new RemoveAt());
@@ -50,7 +50,7 @@ public class Invoker {
     public static HashMap<String, Command> getCommandHashMap() {
         return commandHashMap;
     }
-    /** Метод, реализующий работу с консолью */
+    // Метод, реализующий работу с консолью
     private static void startConsoleProgram() {
         System.out.println("Введите команду (help : вывести справку по доступным командам)");
         Scanner scanner = new Scanner(System.in);
@@ -69,9 +69,9 @@ public class Invoker {
         }
         scanner.close();
     }
-    /**Метод, проверяющий заданный файл и начинающий работу с коллекцией
-     * @see Invoker#startConsoleProgram()
-     * @see VehiclesCollection#putVehicleFromFile() */
+    
+    // Метод, проверяющий заданный файл и начинающий работу с коллекцией
+    
     public static void invoker(String[] args) throws FileNotFoundException {
         if (args.length == 1) {
             file = args[0];
