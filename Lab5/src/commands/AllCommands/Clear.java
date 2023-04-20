@@ -6,7 +6,7 @@ import commands.Invoker;
 import exeptions.InvalidCommandException;
 
 public class Clear implements Command {
-    /**Метод, очищающий коллекцию*/
+    /**Method, that clear connection*/
     @Override
     public void execute() {
         try {
