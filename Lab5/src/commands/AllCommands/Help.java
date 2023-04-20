@@ -5,7 +5,7 @@ import commands.Invoker;
 import exeptions.InvalidCommandException;
 
 public class Help implements Command {
-    /**метод, выводящий справку по командам*/
+    /*Method that displays help*/
     @Override
     public void execute() {
         try {
