@@ -5,7 +5,7 @@ import commands.Invoker;
 import exeptions.InvalidCommandException;
 
 public class Exit implements Command {
-    /**Метод, завершающий программу*/
+    /*Method that terminates the program without saving*/
     @Override
     public void execute() {
         try {
