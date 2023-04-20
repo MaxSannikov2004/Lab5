@@ -9,13 +9,13 @@ import java.util.Scanner;
 import java.io.File;
 
 public class Invoker {
-    /** Поле, отвечающее за продолжение работы программы */
+    // Поле, отвечающее за продолжение работы программы
     private static boolean programRunning = true;
-    /** Поле, содержащее в себе введенные пользователем команду и её аргументы */
+    // Поле, содержащее в себе введенные пользователем команду и её аргументы
     private static String[] split;
-    /** Поле, содержащее путь к файлу, с которым взаимодействует программа */
+    // Поле, содержащее путь к файлу, с которым взаимодействует программа 
     private static String file;
-    /** Коллекция, через которую осуществляется выполнение команд */
+    // Коллекция, через которую осуществляется выполнение команд 
     private static final HashMap<String, Command> commandHashMap = new HashMap<>();
     static {
         commandHashMap.put("help", new Help());
